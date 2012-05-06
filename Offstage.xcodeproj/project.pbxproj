@@ -14,6 +14,18 @@
 		D41BF1FD15560C9A00D2EDFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF1FC15560C9A00D2EDFE /* main.m */; };
 		D41BF20115560C9A00D2EDFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF20015560C9A00D2EDFE /* AppDelegate.m */; };
 		D41BF20415560C9A00D2EDFE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41BF20215560C9A00D2EDFE /* MainStoryboard.storyboard */; };
+		D41BF2481556188C00D2EDFE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2421556188C00D2EDFE /* Default.png */; };
+		D41BF2491556188C00D2EDFE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2431556188C00D2EDFE /* Default@2x.png */; };
+		D41BF24A1556188C00D2EDFE /* icon_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2441556188C00D2EDFE /* icon_114x114.png */; };
+		D41BF24B1556188C00D2EDFE /* icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2451556188C00D2EDFE /* icon_57x57.png */; };
+		D41BF24C1556188C00D2EDFE /* toolbar_about.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2461556188C00D2EDFE /* toolbar_about.png */; };
+		D41BF24D1556188C00D2EDFE /* toolbar_subscribe.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */; };
+		D41BF25515561DCD00D2EDFE /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25215561DCD00D2EDFE /* Podcast.m */; };
+		D41BF25615561DCD00D2EDFE /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25415561DCD00D2EDFE /* XMLParser.m */; };
+		D41BF25915561F2400D2EDFE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25815561F2400D2EDFE /* AboutViewController.m */; };
+		D41BF25E15561F2D00D2EDFE /* PodcastDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25B15561F2D00D2EDFE /* PodcastDetailsViewController.m */; };
+		D41BF262155621D800D2EDFE /* PodcastsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */; };
+		D41BF2641556416F00D2EDFE /* avatar_new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2631556416F00D2EDFE /* avatar_new.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,23 @@
 		D41BF1FF15560C9A00D2EDFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D41BF20015560C9A00D2EDFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D41BF20315560C9A00D2EDFE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D41BF2421556188C00D2EDFE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D41BF2431556188C00D2EDFE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D41BF2441556188C00D2EDFE /* icon_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114x114.png; sourceTree = "<group>"; };
+		D41BF2451556188C00D2EDFE /* icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57x57.png; sourceTree = "<group>"; };
+		D41BF2461556188C00D2EDFE /* toolbar_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_about.png; sourceTree = "<group>"; };
+		D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_subscribe.png; sourceTree = "<group>"; };
+		D41BF25115561DCD00D2EDFE /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
+		D41BF25215561DCD00D2EDFE /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
+		D41BF25315561DCD00D2EDFE /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		D41BF25415561DCD00D2EDFE /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		D41BF25715561F2400D2EDFE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		D41BF25815561F2400D2EDFE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		D41BF25A15561F2D00D2EDFE /* PodcastDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastDetailsViewController.h; sourceTree = "<group>"; };
+		D41BF25B15561F2D00D2EDFE /* PodcastDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastDetailsViewController.m; sourceTree = "<group>"; };
+		D41BF260155621D800D2EDFE /* PodcastsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastsTableViewController.h; sourceTree = "<group>"; };
+		D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastsTableViewController.m; sourceTree = "<group>"; };
+		D41BF2631556416F00D2EDFE /* avatar_new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar_new.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,7 @@
 		D41BF1E115560C9A00D2EDFE = {
 			isa = PBXGroup;
 			children = (
+				D41BF2411556188C00D2EDFE /* images */,
 				D41BF1F615560C9A00D2EDFE /* Offstage */,
 				D41BF1EF15560C9A00D2EDFE /* Frameworks */,
 				D41BF1ED15560C9A00D2EDFE /* Products */,
@@ -74,10 +104,20 @@
 		D41BF1F615560C9A00D2EDFE /* Offstage */ = {
 			isa = PBXGroup;
 			children = (
+				D41BF25A15561F2D00D2EDFE /* PodcastDetailsViewController.h */,
+				D41BF25B15561F2D00D2EDFE /* PodcastDetailsViewController.m */,
+				D41BF25715561F2400D2EDFE /* AboutViewController.h */,
+				D41BF25815561F2400D2EDFE /* AboutViewController.m */,
+				D41BF25115561DCD00D2EDFE /* Podcast.h */,
+				D41BF25215561DCD00D2EDFE /* Podcast.m */,
+				D41BF25315561DCD00D2EDFE /* XMLParser.h */,
+				D41BF25415561DCD00D2EDFE /* XMLParser.m */,
 				D41BF1FF15560C9A00D2EDFE /* AppDelegate.h */,
 				D41BF20015560C9A00D2EDFE /* AppDelegate.m */,
 				D41BF20215560C9A00D2EDFE /* MainStoryboard.storyboard */,
 				D41BF1F715560C9A00D2EDFE /* Supporting Files */,
+				D41BF260155621D800D2EDFE /* PodcastsTableViewController.h */,
+				D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */,
 			);
 			path = Offstage;
 			sourceTree = "<group>";
@@ -91,6 +131,20 @@
 				D41BF1FE15560C9A00D2EDFE /* Offstage-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D41BF2411556188C00D2EDFE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D41BF2631556416F00D2EDFE /* avatar_new.jpg */,
+				D41BF2421556188C00D2EDFE /* Default.png */,
+				D41BF2431556188C00D2EDFE /* Default@2x.png */,
+				D41BF2441556188C00D2EDFE /* icon_114x114.png */,
+				D41BF2451556188C00D2EDFE /* icon_57x57.png */,
+				D41BF2461556188C00D2EDFE /* toolbar_about.png */,
+				D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +199,13 @@
 			files = (
 				D41BF1FB15560C9A00D2EDFE /* InfoPlist.strings in Resources */,
 				D41BF20415560C9A00D2EDFE /* MainStoryboard.storyboard in Resources */,
+				D41BF2481556188C00D2EDFE /* Default.png in Resources */,
+				D41BF2491556188C00D2EDFE /* Default@2x.png in Resources */,
+				D41BF24A1556188C00D2EDFE /* icon_114x114.png in Resources */,
+				D41BF24B1556188C00D2EDFE /* icon_57x57.png in Resources */,
+				D41BF24C1556188C00D2EDFE /* toolbar_about.png in Resources */,
+				D41BF24D1556188C00D2EDFE /* toolbar_subscribe.png in Resources */,
+				D41BF2641556416F00D2EDFE /* avatar_new.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +218,11 @@
 			files = (
 				D41BF1FD15560C9A00D2EDFE /* main.m in Sources */,
 				D41BF20115560C9A00D2EDFE /* AppDelegate.m in Sources */,
+				D41BF25515561DCD00D2EDFE /* Podcast.m in Sources */,
+				D41BF25615561DCD00D2EDFE /* XMLParser.m in Sources */,
+				D41BF25915561F2400D2EDFE /* AboutViewController.m in Sources */,
+				D41BF25E15561F2D00D2EDFE /* PodcastDetailsViewController.m in Sources */,
+				D41BF262155621D800D2EDFE /* PodcastsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +334,7 @@
 				D41BF20C15560C9A00D2EDFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,6 +11,7 @@
 @interface AboutViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *cpAvatar;
+@property (weak, nonatomic) IBOutlet UITextView *descLabel;
 
 - (IBAction)offstageLink:(id)sender;
 

@@ -18,14 +18,24 @@
 		D41BF2491556188C00D2EDFE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2431556188C00D2EDFE /* Default@2x.png */; };
 		D41BF24A1556188C00D2EDFE /* icon_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2441556188C00D2EDFE /* icon_114x114.png */; };
 		D41BF24B1556188C00D2EDFE /* icon_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2451556188C00D2EDFE /* icon_57x57.png */; };
-		D41BF24C1556188C00D2EDFE /* toolbar_about.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2461556188C00D2EDFE /* toolbar_about.png */; };
-		D41BF24D1556188C00D2EDFE /* toolbar_subscribe.png in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */; };
 		D41BF25515561DCD00D2EDFE /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25215561DCD00D2EDFE /* Podcast.m */; };
 		D41BF25615561DCD00D2EDFE /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25415561DCD00D2EDFE /* XMLParser.m */; };
 		D41BF25915561F2400D2EDFE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25815561F2400D2EDFE /* AboutViewController.m */; };
 		D41BF25E15561F2D00D2EDFE /* PodcastDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF25B15561F2D00D2EDFE /* PodcastDetailsViewController.m */; };
 		D41BF262155621D800D2EDFE /* PodcastsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */; };
 		D41BF2641556416F00D2EDFE /* avatar_new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D41BF2631556416F00D2EDFE /* avatar_new.jpg */; };
+		D41BF26815564D1900D2EDFE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41BF26715564D1900D2EDFE /* AVFoundation.framework */; };
+		D41BF26A155651C800D2EDFE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41BF269155651C800D2EDFE /* MediaPlayer.framework */; };
+		D41BF26C155E0BB500D2EDFE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41BF26B155E0BB500D2EDFE /* SystemConfiguration.framework */; };
+		D4BD1E56155EFDAE00347CED /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BD1E55155EFDAE00347CED /* Twitter.framework */; };
+		D4BD1E5A15601FCF00347CED /* WebScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BD1E5915601FCF00347CED /* WebScheduleViewController.m */; };
+		D4BD1E61156490B000347CED /* tabbar_about.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E5B156490B000347CED /* tabbar_about.png */; };
+		D4BD1E66156490B000347CED /* tabbar_subscribe.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E60156490B000347CED /* tabbar_subscribe.png */; };
+		D4BD1E6B1564920400347CED /* tabbar_podcast.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E671564920400347CED /* tabbar_podcast.png */; };
+		D4BD1E6C1564920400347CED /* tabbar_podcast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E681564920400347CED /* tabbar_podcast@2x.png */; };
+		D4BD1E6D1564920400347CED /* tabbar_schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E691564920400347CED /* tabbar_schedule.png */; };
+		D4BD1E6E1564920400347CED /* tabbar_schedule@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E6A1564920400347CED /* tabbar_schedule@2x.png */; };
+		D4BD1E7B1564AABD00347CED /* blue_button_280.png in Resources */ = {isa = PBXBuildFile; fileRef = D4BD1E7A1564AABD00347CED /* blue_button_280.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +54,6 @@
 		D41BF2431556188C00D2EDFE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D41BF2441556188C00D2EDFE /* icon_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114x114.png; sourceTree = "<group>"; };
 		D41BF2451556188C00D2EDFE /* icon_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57x57.png; sourceTree = "<group>"; };
-		D41BF2461556188C00D2EDFE /* toolbar_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_about.png; sourceTree = "<group>"; };
-		D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar_subscribe.png; sourceTree = "<group>"; };
 		D41BF25115561DCD00D2EDFE /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
 		D41BF25215561DCD00D2EDFE /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
 		D41BF25315561DCD00D2EDFE /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
@@ -57,6 +65,19 @@
 		D41BF260155621D800D2EDFE /* PodcastsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastsTableViewController.h; sourceTree = "<group>"; };
 		D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastsTableViewController.m; sourceTree = "<group>"; };
 		D41BF2631556416F00D2EDFE /* avatar_new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar_new.jpg; sourceTree = "<group>"; };
+		D41BF26715564D1900D2EDFE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D41BF269155651C800D2EDFE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D41BF26B155E0BB500D2EDFE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D4BD1E55155EFDAE00347CED /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		D4BD1E5815601FCF00347CED /* WebScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebScheduleViewController.h; sourceTree = "<group>"; };
+		D4BD1E5915601FCF00347CED /* WebScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebScheduleViewController.m; sourceTree = "<group>"; };
+		D4BD1E5B156490B000347CED /* tabbar_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_about.png; sourceTree = "<group>"; };
+		D4BD1E60156490B000347CED /* tabbar_subscribe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_subscribe.png; sourceTree = "<group>"; };
+		D4BD1E671564920400347CED /* tabbar_podcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_podcast.png; sourceTree = "<group>"; };
+		D4BD1E681564920400347CED /* tabbar_podcast@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_podcast@2x.png"; sourceTree = "<group>"; };
+		D4BD1E691564920400347CED /* tabbar_schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_schedule.png; sourceTree = "<group>"; };
+		D4BD1E6A1564920400347CED /* tabbar_schedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_schedule@2x.png"; sourceTree = "<group>"; };
+		D4BD1E7A1564AABD00347CED /* blue_button_280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_280.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BD1E56155EFDAE00347CED /* Twitter.framework in Frameworks */,
+				D41BF26C155E0BB500D2EDFE /* SystemConfiguration.framework in Frameworks */,
+				D41BF26A155651C800D2EDFE /* MediaPlayer.framework in Frameworks */,
+				D41BF26815564D1900D2EDFE /* AVFoundation.framework in Frameworks */,
 				D41BF1F115560C9A00D2EDFE /* UIKit.framework in Frameworks */,
 				D41BF1F315560C9A00D2EDFE /* Foundation.framework in Frameworks */,
 				D41BF1F515560C9A00D2EDFE /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +101,8 @@
 		D41BF1E115560C9A00D2EDFE = {
 			isa = PBXGroup;
 			children = (
+				D4BD1E55155EFDAE00347CED /* Twitter.framework */,
+				D41BF26B155E0BB500D2EDFE /* SystemConfiguration.framework */,
 				D41BF2411556188C00D2EDFE /* images */,
 				D41BF1F615560C9A00D2EDFE /* Offstage */,
 				D41BF1EF15560C9A00D2EDFE /* Frameworks */,
@@ -94,6 +121,8 @@
 		D41BF1EF15560C9A00D2EDFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D41BF269155651C800D2EDFE /* MediaPlayer.framework */,
+				D41BF26715564D1900D2EDFE /* AVFoundation.framework */,
 				D41BF1F015560C9A00D2EDFE /* UIKit.framework */,
 				D41BF1F215560C9A00D2EDFE /* Foundation.framework */,
 				D41BF1F415560C9A00D2EDFE /* CoreGraphics.framework */,
@@ -118,6 +147,8 @@
 				D41BF1F715560C9A00D2EDFE /* Supporting Files */,
 				D41BF260155621D800D2EDFE /* PodcastsTableViewController.h */,
 				D41BF261155621D800D2EDFE /* PodcastsTableViewController.m */,
+				D4BD1E5815601FCF00347CED /* WebScheduleViewController.h */,
+				D4BD1E5915601FCF00347CED /* WebScheduleViewController.m */,
 			);
 			path = Offstage;
 			sourceTree = "<group>";
@@ -136,13 +167,18 @@
 		D41BF2411556188C00D2EDFE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D4BD1E7A1564AABD00347CED /* blue_button_280.png */,
+				D4BD1E671564920400347CED /* tabbar_podcast.png */,
+				D4BD1E681564920400347CED /* tabbar_podcast@2x.png */,
+				D4BD1E691564920400347CED /* tabbar_schedule.png */,
+				D4BD1E6A1564920400347CED /* tabbar_schedule@2x.png */,
+				D4BD1E5B156490B000347CED /* tabbar_about.png */,
+				D4BD1E60156490B000347CED /* tabbar_subscribe.png */,
 				D41BF2631556416F00D2EDFE /* avatar_new.jpg */,
 				D41BF2421556188C00D2EDFE /* Default.png */,
 				D41BF2431556188C00D2EDFE /* Default@2x.png */,
 				D41BF2441556188C00D2EDFE /* icon_114x114.png */,
 				D41BF2451556188C00D2EDFE /* icon_57x57.png */,
-				D41BF2461556188C00D2EDFE /* toolbar_about.png */,
-				D41BF2471556188C00D2EDFE /* toolbar_subscribe.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -203,9 +239,14 @@
 				D41BF2491556188C00D2EDFE /* Default@2x.png in Resources */,
 				D41BF24A1556188C00D2EDFE /* icon_114x114.png in Resources */,
 				D41BF24B1556188C00D2EDFE /* icon_57x57.png in Resources */,
-				D41BF24C1556188C00D2EDFE /* toolbar_about.png in Resources */,
-				D41BF24D1556188C00D2EDFE /* toolbar_subscribe.png in Resources */,
 				D41BF2641556416F00D2EDFE /* avatar_new.jpg in Resources */,
+				D4BD1E61156490B000347CED /* tabbar_about.png in Resources */,
+				D4BD1E66156490B000347CED /* tabbar_subscribe.png in Resources */,
+				D4BD1E6B1564920400347CED /* tabbar_podcast.png in Resources */,
+				D4BD1E6C1564920400347CED /* tabbar_podcast@2x.png in Resources */,
+				D4BD1E6D1564920400347CED /* tabbar_schedule.png in Resources */,
+				D4BD1E6E1564920400347CED /* tabbar_schedule@2x.png in Resources */,
+				D4BD1E7B1564AABD00347CED /* blue_button_280.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +264,7 @@
 				D41BF25915561F2400D2EDFE /* AboutViewController.m in Sources */,
 				D41BF25E15561F2D00D2EDFE /* PodcastDetailsViewController.m in Sources */,
 				D41BF262155621D800D2EDFE /* PodcastsTableViewController.m in Sources */,
+				D4BD1E5A15601FCF00347CED /* WebScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

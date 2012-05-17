@@ -17,4 +17,6 @@
 @property (nonatomic, strong) NSString *pubDate;
 @property (nonatomic, strong) NSString *title;
 
++ (NSString *) scrubHtml: (NSString *)html;
+
 @end

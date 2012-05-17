@@ -6,7 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--Podcasts Table View Controller-->
+        <!--Podcasts Table View Controller - Podcasts-->
         <scene sceneID="sMg-YH-Fan">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6g-r0-pog" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="iSu-c9-UT7" id="t6I-AR-eiv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="n7r-9E-evU"/>
+                    <navigationItem key="navigationItem" title="Podcasts" id="n7r-9E-evU"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1032" y="-110"/>
@@ -60,7 +60,7 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4j-Cd-uxq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="SIA-Gt-G8S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Podcasts" image="toolbar_subscribe.png" id="Oqt-eW-obe"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="tabbar_podcast.png" id="Oqt-eW-obe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rpn-ZL-Pij">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -84,16 +84,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Offstage w/ Christian Polanco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="i0Z-dY-XRX">
-                                <rect key="frame" x="20" y="143" width="280" height="21"/>
+                                <rect key="frame" x="20" y="147" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="bII-fY-r95">
-                                <rect key="frame" x="20" y="172" width="280" height="128"/>
+                                <rect key="frame" x="20" y="180" width="280" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <string key="text">NYC Comedian Christian Polanco looks in to the minds of comedians for their views on love and relationships. You've seen him performing all over the country, now listen to Christian's attempt to understand his feelings and all that crap.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -103,7 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LIp-AM-z0z">
-                                <rect key="frame" x="65" y="308" width="190" height="37"/>
+                                <rect key="frame" x="65" y="354" width="190" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="http://offstagepod.com">
@@ -120,13 +120,51 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="toolbar_about.png" id="Qra-lJ-gc9"/>
+                    <tabBarItem key="tabBarItem" title="About" image="tabbar_about.png" id="Qra-lJ-gc9"/>
                     <connections>
                         <outlet property="cpAvatar" destination="KNt-lU-jGx" id="tSC-ht-s7Y"/>
+                        <outlet property="descLabel" destination="bII-fY-r95" id="Zz1-mF-Dl9"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="591" y="469"/>
+        </scene>
+        <!--Web Schedule View Controller - Schedule-->
+        <scene sceneID="LCB-Dn-StA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLq-cy-I91" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="eUs-Zg-16H" customClass="WebScheduleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dPG-qr-eTc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Isc-rV-25i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FwI-Y4-4Yr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="refresh" id="a3e-FU-UXX">
+                                        <connections>
+                                            <action selector="reload" destination="Isc-rV-25i" id="wWr-Kl-pGU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="tabbar_schedule.png" id="Dal-JM-SQx"/>
+                    <connections>
+                        <outlet property="webSchedule" destination="Isc-rV-25i" id="2ch-du-d7f"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="591" y="1051"/>
         </scene>
         <!--Podcast Details View Controller-->
         <scene sceneID="kPD-dp-cxT">
@@ -137,57 +175,82 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CJZ-cj-MZs">
-                                <rect key="frame" x="20" y="20" width="42" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="titleLable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="axU-xh-MHx">
-                                <rect key="frame" x="70" y="23" width="230" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z7w-r7-LA5">
-                                <rect key="frame" x="20" y="50" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Publish Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="53V-85-XAV">
-                                <rect key="frame" x="20" y="257" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="pubDateLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gyw-03-MTd">
-                                <rect key="frame" x="120" y="257" width="180" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="5l0-jc-gMA">
-                                <rect key="frame" x="20" y="79" width="280" height="170"/>
+                                <rect key="frame" x="20" y="75" width="280" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="pubDateLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="gyw-03-MTd">
+                                <rect key="frame" x="120" y="257" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Publish Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="53V-85-XAV">
+                                <rect key="frame" x="20" y="258" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="srR-Ra-Lcw">
+                                <rect key="frame" x="20" y="287" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="tweet" backgroundImage="blue_button_280.png">
+                                    <color key="titleColor" red="0.99854530699483213" green="1" blue="0.97459013661932059" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweetTouched:" destination="yFp-l6-T5T" eventType="touchUpInside" id="gBj-qN-j2M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CJZ-cj-MZs">
+                                <rect key="frame" x="20" y="20" width="40" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="podCastTitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="axU-xh-MHx">
+                                <rect key="frame" x="70" y="20" width="232" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="22" height="-1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z7w-r7-LA5">
+                                <rect key="frame" x="20" y="46" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="Qzc-Ly-gw5">
+                                <rect key="frame" x="0.0" y="332" width="320" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yxJ-Ep-X59"/>
                     <connections>
                         <outlet property="descText" destination="5l0-jc-gMA" id="Pfq-9G-qRq"/>
+                        <outlet property="playerView" destination="Qzc-Ly-gw5" id="iWc-9w-PO5"/>
+                        <outlet property="podCastTitleLabel" destination="axU-xh-MHx" id="edZ-u8-rDg"/>
                         <outlet property="pubDateLabel" destination="gyw-03-MTd" id="R4d-yW-Q3q"/>
-                        <outlet property="titleLabel" destination="axU-xh-MHx" id="XXC-Ot-IYQ"/>
                     </connections>
                 </viewController>
             </objects>
@@ -206,15 +269,18 @@
                     <connections>
                         <segue destination="SIA-Gt-G8S" kind="relationship" relationship="viewControllers" id="714-CX-mmV"/>
                         <segue destination="hhg-kg-Yvl" kind="relationship" relationship="viewControllers" id="5Kk-J4-np2"/>
+                        <segue destination="eUs-Zg-16H" kind="relationship" relationship="viewControllers" id="7Tc-yg-dxd"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="122" y="173"/>
+            <point key="canvasLocation" x="49" y="469"/>
         </scene>
     </scenes>
     <resources>
-        <image name="toolbar_about.png" width="30" height="30"/>
-        <image name="toolbar_subscribe.png" width="30" height="30"/>
+        <image name="blue_button_280.png" width="280" height="37"/>
+        <image name="tabbar_about.png" width="30" height="30"/>
+        <image name="tabbar_podcast.png" width="26" height="26"/>
+        <image name="tabbar_schedule.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="AboutViewController" superclassName="UIViewController">
@@ -222,18 +288,29 @@
             <relationships>
                 <relationship kind="action" name="offstageLink:"/>
                 <relationship kind="outlet" name="cpAvatar" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="descLabel" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="PodcastDetailsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PodcastDetailsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="play:"/>
+                <relationship kind="action" name="tweetTouched:"/>
                 <relationship kind="outlet" name="descText" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playerView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="podCastTitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pubDateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="PodcastsTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PodcastsTableViewController.h"/>
+        </class>
+        <class className="WebScheduleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebScheduleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webSchedule" candidateClass="UIWebView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

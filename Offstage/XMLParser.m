@@ -14,9 +14,12 @@
 
 - (XMLParser *) initXMLParser
 {
-//    [super init];
+    self = [super init];
+    if (!self)
+        return nil;
     return self;
 }
+
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
@@ -53,8 +56,8 @@
     // There is nothing to do if we encounter the channel element here.
     // If we encounter the item element however, we want to add the item object to the array
     if ([elementName isEqualToString:@"channel"]) {
-        [podcasts addObject:podcast];
-        podcast = nil;
+//        [podcasts addObject:podcast];
+//        podcast = nil;
     } else if ([elementName isEqualToString:@"item"]) {
         [podcasts addObject:podcast];
         podcast = nil;
@@ -71,11 +74,6 @@
         }
     }
     currentElementValue = nil;
-}
-
-- (void) dealloc
-{
-//    [super dealloc];
 }
 
 @end

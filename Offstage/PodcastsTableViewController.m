@@ -7,6 +7,7 @@
 //
 
 #import "PodcastsTableViewController.h"
+#import <SystemConfiguration/SystemConfiguration.h>
 
 @interface PodcastsTableViewController ()
 
@@ -15,6 +16,29 @@
 @implementation PodcastsTableViewController
 
 NSMutableArray *podcasts;
+
+- (BOOL) canConnectToTheSite {
+    SCNetworkReachabilityRef defaultRouteReachability = SCNetworkReachabilityCreateWithName(NULL, [@"christianpolanco.com" UTF8String]);
+    SCNetworkReachabilityFlags flags;
+    BOOL didRetrieveFlags = SCNetworkReachabilityGetFlags( defaultRouteReachability, &flags);
+    CFRelease(defaultRouteReachability);
+    if (!didRetrieveFlags) {
+        printf("Could not recover network flags\n");
+        return NO;
+    }
+    BOOL isReachable = flags & kSCNetworkFlagsReachable;
+    BOOL needsConnection = flags & kSCNetworkFlagsConnectionRequired;
+    return (isReachable && !needsConnection) ? YES : NO;
+}
+
+- (void) showAlert: (NSString *) theMessage withTitle: (NSString *) theTitle {
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:theTitle 
+                                                 message:theMessage
+                                                delegate:nil
+                                       cancelButtonTitle:@"OK"
+                                       otherButtonTitles:nil];
+    [av show];
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -39,6 +63,11 @@ NSMutableArray *podcasts;
 {
     [super viewDidLoad];
 
+    if (![self canConnectToTheSite]) {
+        [self showAlert:@"This application requires network connectivity. Interaction will be limited." withTitle:@"Network Connectivity"];
+        return;
+    }
+    
     // TODO: parse xml file for data...
     NSURL *url = [[NSURL alloc] initWithString:@"http://christianpolanco.com/podcast/xml/offstagepod.xml"];
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];

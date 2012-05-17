@@ -11,6 +11,6 @@
 #import "XMLParser.h"
 #import "PodcastDetailsViewController.h"
 
-@interface PodcastsTableViewController : UITableViewController
+@interface PodcastsTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @end

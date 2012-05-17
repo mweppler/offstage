@@ -127,7 +127,7 @@ NSMutableArray *podcasts;
     
     Podcast *podcast = [podcasts objectAtIndex:indexPath.row];
     cell.textLabel.text = podcast.title;
-    cell.detailTextLabel.text = podcast.description;
+    cell.detailTextLabel.text = [Podcast scrubHtml:podcast.description];
     
     return cell;
 }
